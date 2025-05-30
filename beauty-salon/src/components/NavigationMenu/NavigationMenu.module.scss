@@ -1,0 +1,17 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  background: #CFC9B5;
+
+  a {
+    color: #000000;
+    text-decoration: none;
+
+    &.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+}
