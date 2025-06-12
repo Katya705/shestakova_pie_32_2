@@ -1,10 +1,17 @@
+
 import styles from './Header.module.scss';
-import logo from '../../assets/logo.png'; // путь к изображению
+// Импортируем логотип — путь к изображению
+import logo from '../../assets/logo.png';
 
 function Header() {
   return (
     <header className={styles.header}>
-      <img src={logo} alt="Логотип салона" className={styles.logo} />
+      {}
+      <img 
+        src={logo} 
+        alt="Логотип салона" 
+        className={styles.logo} 
+      />
     </header>
   );
 }
