@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,20 +7,24 @@
 }
 
 body {
-  font-family: sans-serif;
-  background: #FAF7F2;
+  background-image: url('../../beauty-salon/public/background.svg');
+  background-size: contain; /* Заполняет весь экран */
+  background-position: center;
+  font-family: "Old Standard TT", serif;
+  //background: #FAF7F2;
+  background-color: #FAF7F2;
   color: #333;
-  line-height: 1.6;
-  padding: 0 10px;
+  line-height: 1.5;
+  padding: 0 0px;
 }
 
 main {
   padding: 20px;
 }
 
-@media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
-}
+// @media (max-width: 600px) {
+//   .navbar {
+//     flex-direction: column;
+//     align-items: center;
+//   }
+// }
