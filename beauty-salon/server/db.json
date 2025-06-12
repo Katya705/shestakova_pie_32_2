@@ -1,0 +1,38 @@
+{
+  "portfolio": [
+    { "id": 1, "imageUrl": "http://localhost:3001/images/brow1.jpg" },
+    { "id": 2, "imageUrl": "http://localhost:3001/images/brow2.jpg" },
+
+    { "id": 3, "imageUrl": "http://localhost:3001/images/studio1.jpg" },
+    { "id": 4, "imageUrl": "http://localhost:3001/images/studio2.jpg" },
+    { "id": 5, "imageUrl": "http://localhost:3001/images/studio3.jpg" },
+    { "id": 6, "imageUrl": "http://localhost:3001/images/studio4.jpg" },
+    { "id": 7, "imageUrl": "http://localhost:3001/images/studio5.jpg" },
+    { "id": 8, "imageUrl": "http://localhost:3001/images/studio6.jpg" },
+    { "id": 9, "imageUrl": "http://localhost:3001/images/studio7.jpg" },
+    { "id": 10, "imageUrl": "http://localhost:3001/images/studio8.jpg" },
+    { "id": 11, "imageUrl": "http://localhost:3001/images/studio9.jpg" },
+    { "id": 12, "imageUrl": "http://localhost:3001/images/studio10.jpg" },
+    { "id": 13, "imageUrl": "http://localhost:3001/images/studio11.jpg" },
+    { "id": 14, "imageUrl": "http://localhost:3001/images/studio12.jpg" },
+    { "id": 15, "imageUrl": "http://localhost:3001/images/studio13.jpg" },
+    { "id": 16, "imageUrl": "http://localhost:3001/images/studio14.jpg" },
+    { "id": 17, "imageUrl": "http://localhost:3001/images/studio15.jpg" },
+    { "id": 18, "imageUrl": "http://localhost:3001/images/studio16.jpg" },
+    { "id": 19, "imageUrl": "http://localhost:3001/images/studio17.jpg" },
+    { "id": 20, "imageUrl": "http://localhost:3001/images/studio18.jpg" },
+    { "id": 21, "imageUrl": "http://localhost:3001/images/studio19.jpg" },
+
+    { "id": 23, "imageUrl": "http://localhost:3001/images/manicure1.jpg" },
+    { "id": 24, "imageUrl": "http://localhost:3001/images/manicure2.jpg" },
+    { "id": 25, "imageUrl": "http://localhost:3001/images/manicure3.jpg" },
+    { "id": 26, "imageUrl": "http://localhost:3001/images/manicure4.jpg" },
+    { "id": 27, "imageUrl": "http://localhost:3001/images/manicure5.jpg" },
+    { "id": 28, "imageUrl": "http://localhost:3001/images/brow3.jpg" },
+    { "id": 29, "imageUrl": "http://localhost:3001/images/brow4.jpg" },
+    { "id": 30, "imageUrl": "http://localhost:3001/images/brow5.jpg" },
+    { "id": 31, "imageUrl": "http://localhost:3001/images/brow6.jpg" },
+    { "id": 32, "imageUrl": "http://localhost:3001/images/brow7.jpg" },
+    { "id": 33, "imageUrl": "http://localhost:3001/images/brow8.jpg" }
+  ]
+}
