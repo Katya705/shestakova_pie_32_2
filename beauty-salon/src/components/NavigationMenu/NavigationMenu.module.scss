@@ -1,17 +1,19 @@
 .navbar {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 10px;
-  background: #CFC9B5;
+  display: flex;               // Вертикально расположить ссылки в ряд
+  justify-content: center;     // Центрируем меню по горизонтали
+  gap: 4%;                    // Расстояние между ссылками
+  padding: 1%;                // Отступы внутри навигации
+  background: #CFC9B5;        // Цвет фона навигации
+  font-size: 20px;            // Размер шрифта
+  max-width: 100%;            // Максимальная ширина блока — 100% контейнера
 
   a {
-    color: #000000;
-    text-decoration: none;
+    color: #000000;           // Цвет текста ссылок — чёрный
+    text-decoration: none;    // Убираем подчеркивание у ссылок по умолчанию
 
     &.active {
-      font-weight: bold;
-      text-decoration: underline;
+      font-weight: bold;      // Активная ссылка выделяется жирным шрифтом
+      text-decoration: underline;  // И подчеркиванием
     }
   }
 }
