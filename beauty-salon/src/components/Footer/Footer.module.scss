@@ -1,17 +1,102 @@
+/* Стили для футера сайта */
 .footer {
-  background-color: #9EA289;
-  padding: 20px;
-  text-align: center;
-  color: #fff;
-  font-family: 'Old Standard TT', serif;
-  width: 100%;
+  background-color: #9EA289;  /* Цвет фона футера */
+  padding: 20px 35px;          /* Отступы вокруг содержимого */
+  font-family: 'Old Standard TT', serif; /* Шрифт с засечками */
+  color: #000;                 /* Цвет текста */
+  width: 100%;                /* Футер на всю ширину */
 
-  .logo {
-    max-width: 150px;
-    height: auto;
-    margin-bottom: 0px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  /* Контейнер для распределения блоков по горизонтали */
+  .container {
+    display: flex;              /* Flex-контейнер */
+    flex-wrap: wrap;            /* Позволяет переносить элементы на новую строку */
+    justify-content: space-between; /* Размещаем блоки по краям с равными промежутками */
+    align-items: center;        /* Вертикальное выравнивание по центру */
+    min-height: 100px;          /* Минимальная высота контейнера */
+    gap: 20px;                  /* Отступы между колонками на маленьких экранах */
+    text-align: center;         /* Центрируем текст внутри */
+  }
+
+  /* Левая колонка с иконками */
+  .icons {
+    display: flex;              /* Горизонтальное расположение иконок */
+    gap: 20px;                  /* Расстояние между иконками */
+    flex: 1;                    /* Занимает равную часть пространства */
+    justify-content: flex-start; /* Выравнивание по левому краю */
+
+    /* Размеры иконок */
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  /* Центральная колонка с логотипом */
+  .center {
+    flex: 1;                    /* Занимает равную часть пространства */
+    display: flex;
+    flex-direction: column;     /* Вертикальное расположение элементов */
+    align-items: center;        /* Центрируем содержимое */
+
+    /* Стили для логотипа */
+    .logo {
+      max-width: 150px;         /* Максимальная ширина */
+      height: auto;             /* Автоматическая высота для пропорций */
+      display: block;
+      margin: 0 auto;           /* Центрирование */
+    }
+
+    /* Дополнительный текст под логотипом, если будет */
+    p {
+      margin-top: 5px;
+      font-size: 14px;
+    }
+  }
+
+  /* Правая колонка с адресом */
+  .address {
+    display: flex;              /* Горизонтальное расположение иконки и текста */
+    align-items: center;        /* Выравнивание по центру по вертикали */
+    gap: 10px;                  /* Расстояние между иконкой и текстом */
+    flex: 1;                    /* Занимает равную часть пространства */
+    justify-content: flex-end;  /* Выравнивание по правому краю */
+
+    /* Иконка адреса */
+    img {
+      width: 32px;
+      height: 32px;
+    }
+
+    /* Текст адреса */
+    p {
+      font-size: 16px;
+      line-height: 1.4;
+      text-align: left;
+    }
+  }
+
+  /* Адаптив для экранов шириной до 900px */
+  @media (max-width: 900px) {
+    .container {
+      flex-direction: column;   /* Располагаем колонки вертикально */
+      align-items: center;      /* Центрируем все элементы */
+      gap: 30px;                /* Увеличиваем отступы между блоками */
+    }
+
+    /* Центрируем иконки и адрес */
+    .icons,
+    .address {
+      justify-content: center;
+    }
+
+    /* Адрес размещаем вертикально и центрируем текст */
+    .address {
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        text-align: center;
+      }
+    }
   }
 }
