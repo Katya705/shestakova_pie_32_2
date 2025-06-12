@@ -1,14 +1,38 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom'; // Импортируем NavLink для создания ссылок и useLocation для получения текущего маршрута
 import styles from './NavigationMenu.module.scss';
 
 function NavigationMenu() {
+  
+  const location = useLocation();
+
+
+  const links = [
+    { to: '/', label: 'Главная', exact: true },
+    { to: '/care-tips', label: 'Советы по уходу' },
+    { to: '/masters', label: 'Мастера' },
+    { to: '/portfolio', label: 'Портфолио' },
+    { to: '/services', label: 'Услуги' },
+  ];
+
   return (
     <nav className={styles.navbar}>
-      <NavLink to="/" end>Главная</NavLink>
-      <NavLink to="/care-tips">Советы по уходу</NavLink>
-      <NavLink to="/masters">Мастера</NavLink>
-      <NavLink to="/portfolio">Портфолио</NavLink>
-      <NavLink to="/services">Услуги</NavLink>
+      {links.map(({ to, label, exact }) => {
+       
+        const isActive = exact
+          ? location.pathname === to
+          : location.pathname.startsWith(to);
+
+        return !isActive && (
+          <NavLink
+            key={to}
+            to={to}
+            className={({ isActive }) => (isActive ? 'active' : '')}
+            end={exact} 
+          >
+            {label}
+          </NavLink>
+        );
+      })}
     </nav>
   );
 }
